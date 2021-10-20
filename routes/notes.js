@@ -1,8 +1,9 @@
 const notes = require('express').Router();
-const path = require('path');
 const fs = require('fs');
 // const db = fs.readFileSync('./db/notes.json','utf-8')
 const db = require('../db/notes.json')
+const uniqid = require('uniqid')
+
 
 
 
@@ -14,8 +15,6 @@ const db = require('../db/notes.json')
 // });
 
 notes.get('/notes', (req, res) =>{
-
-
     console.log(db);
     res.json(db)
 }
@@ -25,17 +24,19 @@ notes.get('/notes', (req, res) =>{
 // POST Route for a error logging
 notes.post('/notes', (req, res) => {
   // TODO: Logic for appending data to the db/notes.json file
-  const { title, text } = req.body;
+  const { title, text} = req.body;
 
-
+   
   if (title && text) {
     const newNotes = {
       title,
       text,
+      id: uniqid(),
     };
+  
    db.push(newNotes);
 
-    fs.writeFile('./db/notes.json', JSON.stringify(db), (err) =>
+    fs.writeFile('./db/notes.json', JSON.stringify(db, null, 4), (err) =>
     err ? console.error(err):console.log('not saved')
     
     );
