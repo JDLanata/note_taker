@@ -1,8 +1,8 @@
 const notes = require('express').Router();
 const path = require('path');
-// const { v4: uuidv4 } = require('uuid');
 const fs = require('fs');
-const db = fs.readFileSync('./db/notes.json','utf-8')
+// const db = fs.readFileSync('./db/notes.json','utf-8')
+const db = require('../db/notes.json')
 
 
 
@@ -17,7 +17,7 @@ notes.get('/notes', (req, res) =>{
 
 
     console.log(db);
-    res.json(JSON.parse(db))
+    res.json(db)
 }
 
 );
@@ -28,12 +28,12 @@ notes.post('/notes', (req, res) => {
   const { title, text } = req.body;
 
 
-  if (req.body) {
+  if (title && text) {
     const newNotes = {
       title,
       text,
     };
-   db.push(newNotes)
+   db.push(newNotes);
 
     fs.writeFile('./db/notes.json', JSON.stringify(db), (err) =>
     err ? console.error(err):console.log('not saved')
