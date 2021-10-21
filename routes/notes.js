@@ -55,6 +55,12 @@ const newId = db.findIndex(p => p.id == id);
 
 db.splice(newId, 1); 
 
+fs.writeFile('./db/notes.json', JSON.stringify(db, null, 4), (err) =>
+err ? console.error(err):console.log('not saved')
+
+);
+
+
 return res.send('deleted?')
 });
 

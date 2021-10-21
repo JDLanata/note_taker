@@ -1,23 +1,12 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text",
-        "id": "01"
-        
+        "title": "test note",
+        "text": "test note",
+        "id": "1d3pi2196kkv07pw9i"
     },
     {
-        "title": "new note",
-        "text": "note",
-        "id": "02"
-    },
-    {
-        "title": "new new note",
-        "text": "trt me once again",
-        "id": "1d3pi2189okv05rpdh"
-    },
-    {
-        "title": "lets make a third one",
-        "text": "this is anouther note\n",
-        "id": "1d3pi2126okv05s4lm"
+        "title": "note 3",
+        "text": "note 3",
+        "id": "1d3pi25vkkv07s5yu"
     }
 ]
