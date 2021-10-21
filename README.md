@@ -1,7 +1,6 @@
 # Note Taker
 
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
 
 When running the site notes can be taken on the empty note section. Once saved notes will appear on the left hand side and can be selected to appear back on the large notes side. Notes can also be deleted by pressing the delete button.
@@ -37,7 +36,7 @@ Express and UniquID were used to create the base of the project
 ---
 ## License
 
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 ## Contribute
