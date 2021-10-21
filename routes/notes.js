@@ -1,6 +1,5 @@
 const notes = require('express').Router();
 const fs = require('fs');
-// const db = fs.readFileSync('./db/notes.json','utf-8')
 const db = require('../db/notes.json')
 const uniqid = require('uniqid')
 
@@ -8,11 +7,8 @@ const uniqid = require('uniqid')
 
 
 // GET Route for retrieving notes information
-// notes.get('/', (req, res) => {
-//   // TODO: Logic for sending all the content of db/notes.json
-// fs.readFile('./db/notes.json').then((data)=> res.json(JSON.parse(data)));
 
-// });
+
 
 notes.get('/notes', (req, res) =>{
     console.log(db);
@@ -23,7 +19,6 @@ notes.get('/notes', (req, res) =>{
 
 // POST Route for a error logging
 notes.post('/notes', (req, res) => {
-  // TODO: Logic for appending data to the db/notes.json file
   const { title, text} = req.body;
 
    
