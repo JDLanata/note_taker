@@ -53,6 +53,14 @@ There are no tests to run
 
 ## Screenshots 
 
+
+![note-taker-two](https://user-images.githubusercontent.com/87950670/138322955-b4bfd28b-d12b-4d4a-8424-a7476a18ab2b.png)
+
+![note-taker-one](https://user-images.githubusercontent.com/87950670/138322957-8b66f561-aef1-46c7-9f46-a56a93f9e096.png)
+
+![note-taker-three](https://user-images.githubusercontent.com/87950670/138322958-030916d0-3bb9-4c47-87fd-d42c6b9951e9.png)
+
+
 --
 ## Contact
 
@@ -60,5 +68,5 @@ GitHub: https://github.com/JDLanata
 
 LinkedIn: https://www.linkedin.com/in/jdlanata
 
-Email: Juan Diego Lanata
+Email: JuanDL456@gmail.com
 
