@@ -47,15 +47,16 @@ notes.post('/notes', (req, res) => {
 });
 
 
+notes.delete('/notes/:id',(req,res) => {
 
+const { id } = req.params;
 
-    // // Convert the data to a string so we can save it
-    // reviews.push(newReview)
-    // const reviewString = JSON.stringify(reviews,null,4);
+const newId = db.findIndex(p => p.id == id);
 
-  
-   
+db.splice(newId, 1); 
 
+return res.send('deleted?')
+});
 
 
 module.exports = notes;
